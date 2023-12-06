@@ -23,6 +23,7 @@ body {
     background-color: rgb(72, 214, 105);
     font-family: Poppins-Regular;
     color: white;
+    font-weight: 900;
 }
 
 .navbar-brand{
@@ -42,6 +43,9 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
+  .icon{ 
+    height: 100px;
+  }
 
 /* Hero */
 
@@ -59,7 +63,7 @@ body {
 }
 
 .shade-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
     right: 0;
@@ -311,64 +315,19 @@ body {
             right: auto;
         }
 }
-
-/* Contact */
-
-.contact-section {
-    display: flex;
-    justify-content: center; 
-    padding: 40px;
-    background: linear-gradient(to right, #47cf69, #fde342);
-    font-family: Poppins-Regular;
-    color: #efeaea;
-    }
-
-    .contact-column {
-        flex: 1; 
-        max-width: 600px; 
-        padding: 20px;
-        margin: 0 10px; 
-    }
-
-    h2 {
-        color: #333;
-    }
-
-    p {
-        margin-bottom: 10px;
-    }
-   
-    .footer .footer-legal .credits {
-        padding-top: 4px;
-        font-size: 13px;
-        color: #fff;
-    }
-    
-    .footer .footer-legal .credits a {
-        color: #333;
-        font-family: Poppins-Regular;
-    }
-
-    .map {
-        width: 550px;
-        height: 350px;
-      }
-      
-    @media only screen and (max-width: 600px) {
-        .map {
-          width: 300px;
-          height: 150px;
-        }
-      }
-      
-    @media only screen and (max-width: 600px) {
-          .display-4 {
-            font-size: 17px;
-          }
-          .lead{
-              font-size: 14px;
-          }
-          .navbar-brand{
-              font-size: 12px;
-          }
-        }
+  
+@media only screen and (max-width: 600px) {
+.display-4 {
+font-size: 17px;
+}
+.lead{
+    font-size: 14px;
+}
+.navbar-brand{
+    font-size: 12px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+  }
+}
